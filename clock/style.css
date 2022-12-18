@@ -1,0 +1,103 @@
+*,*::after,*::before{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: #D1A7A0;
+}
+
+.outerborder{
+    position: absolute;
+    margin: auto;
+    inset:0;
+
+    width:22em;
+    height:22em;
+    border-radius: 50%;
+    background-color: #ff3695;
+    
+    
+}
+
+.innerborder{
+    position: absolute;
+    margin: auto;
+    inset:0;
+
+    width:20em;
+    height:20em;
+    border-radius: 50%;
+    background-color: #ff83c1;
+    border: 1px solid #f62c8a;
+}
+
+.face{
+    position: absolute;
+    margin: auto;
+    inset:0;
+
+    width:19em;
+    height:19em;
+    border-radius: 50%;
+    background-color: #fb94c8;
+    border-left: 4px solid  #e27fad;
+    border-top: 4px solid  #e27fad;
+}
+
+.dot{
+    position: absolute;
+    margin: auto;
+    inset:0;
+
+    width:1em;
+    height:1em;
+    border-radius: 50%;
+    background-color: black;
+}
+
+.hand{
+    position: absolute;
+    margin: auto;
+    top:50%;
+    left:50%;
+
+    
+    background-color: black;
+    
+}
+
+.hour{
+    width:0.5em;
+    height:5em;
+    transform-origin: top right;
+    transform: rotate(45deg);
+    box-shadow: 10px 0 6px -2px rgb(0, 0, 0.4);
+}
+.minute{
+    width:0.4em;
+    height:7em;
+    transform-origin: top ;
+    transform: rotate(210deg);
+    box-shadow: -10px 0 5px -2px rgb(0, 0, 0.4);
+    animation:rotate 3600s infinite linear
+
+}
+
+.second{
+    width:0.2em;
+    height:8em;
+    transform-origin: top ;
+    transform: rotate(95deg);
+    animation:rotate 60s infinite linear
+    
+
+}
+
+@keyframes rotate {
+    100%{
+        transform: rotate(360deg);
+    }
+    
+}
