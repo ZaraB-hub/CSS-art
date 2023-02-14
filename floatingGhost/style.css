@@ -58,7 +58,7 @@ body{
     width: 12em;
     height: 5vh;
     position: absolute;
-    top:86%;
+    top:96%;
     left:41.5%;
     animation:shrink 4s infinite linear;
 }
