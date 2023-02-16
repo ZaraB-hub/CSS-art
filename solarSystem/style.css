@@ -1,9 +1,35 @@
-*,*::after,*::after{
+*,
+*::after,
+*::after {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-body{
-    background-image: url("https://media2.giphy.com/media/FlodpfQUBSp20/200w.gif?cid=6c09b952fhmcwj3g3cudggrin537p24e73rpznswkylg1xln&rid=200w.gif&ct=g");
+body {
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaJtwHCk2X1PkRc6QtrQZzWMROreyUMzk70nQHTipq&s"), url("https://media2.giphy.com/media/FlodpfQUBSp20/200w.gif?cid=6c09b952fhmcwj3g3cudggrin537p24e73rpznswkylg1xln&rid=200w.gif&ct=g");
+    background-repeat: no-repeat, repeat;
+    background-position: center top 250px;
+}
+
+.circle {
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    transform-origin: center center;
+    animation: circle 4s infinite linear;
+}
+
+@keyframes circle {
+    from {
+        transform: rotate(0deg) translateX(100px) rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg) translateX(100px) rotate(-360deg);
+    }
 }
