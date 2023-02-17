@@ -12,24 +12,33 @@ body {
     background-position: center top 250px;
 }
 
-.circle {
-    width: 50px;
-    height: 50px;
-    background-color: red;
-    border-radius: 50%;
+.earth {
     position: absolute;
-    top: 0;
-    left: 100%;
+    top: 53%;
+    left: 48.5%;
     transform-origin: center center;
-    animation: circle 4s infinite linear;
+    animation: circle 10s infinite linear;
+}
+.earth > img{
+    width: 40px;
 }
 
+.mercury {
+    position: absolute;
+    top: 54%;
+    left: 49.5%;
+    transform-origin: center center;
+    animation: circle 10s infinite linear;
+}
+.mercury > img{
+    width: 10px;
+}
 @keyframes circle {
     from {
         transform: rotate(0deg) translateX(100px) rotate(0deg);
     }
 
     to {
-        transform: rotate(360deg) translateX(100px) rotate(-360deg);
+        transform: rotate(360deg) translateX(100px)  rotate(-360deg);
     }
 }
